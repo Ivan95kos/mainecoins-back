@@ -4,7 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import mainecoins.Repository.CustomUserRepository;
+import mainecoins.repository.CustomUserRepository;
 import mainecoins.exception.CustomException;
 import mainecoins.model.CustomUser;
 import mainecoins.service.UserDetailsServiceImpl;

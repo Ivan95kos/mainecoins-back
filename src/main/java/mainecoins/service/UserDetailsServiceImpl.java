@@ -1,7 +1,7 @@
 package mainecoins.service;
 
 import lombok.extern.slf4j.Slf4j;
-import mainecoins.Repository.CustomUserRepository;
+import mainecoins.repository.CustomUserRepository;
 import mainecoins.exception.CustomException;
 import mainecoins.model.CustomUser;
 import org.springframework.beans.factory.annotation.Autowired;

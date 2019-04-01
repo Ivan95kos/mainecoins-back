@@ -1,4 +1,4 @@
-package mainecoins.Repository;
+package mainecoins.repository;
 
 import mainecoins.model.CustomUser;
 import org.springframework.data.mongodb.repository.MongoRepository;

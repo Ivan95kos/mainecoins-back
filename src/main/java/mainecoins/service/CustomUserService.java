@@ -4,10 +4,11 @@ import com.binance.api.client.BinanceApiClientFactory;
 import com.binance.api.client.BinanceApiRestClient;
 import com.binance.api.client.domain.account.Account;
 import com.binance.api.client.domain.general.Asset;
+import com.binance.api.client.domain.market.BookTicker;
 import com.binance.api.client.domain.market.TickerStatistics;
 import com.binance.api.client.exception.BinanceApiException;
 import lombok.extern.slf4j.Slf4j;
-import mainecoins.Repository.CustomUserRepository;
+import mainecoins.repository.CustomUserRepository;
 import mainecoins.exception.CustomException;
 import mainecoins.model.CustomUser;
 import mainecoins.model.dto.SingInDTO;
@@ -94,6 +95,10 @@ public class CustomUserService {
 
     public List<Asset> getAssets(){
         return getClient().getAllAssets();
+    }
+
+    public List<BookTicker> getBookTickers(){
+       return getClient().getBookTickers();
     }
 
     private BinanceApiRestClient getClient() {

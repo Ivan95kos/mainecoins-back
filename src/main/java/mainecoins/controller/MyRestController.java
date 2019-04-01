@@ -2,8 +2,9 @@ package mainecoins.controller;
 
 import com.binance.api.client.domain.account.Account;
 import com.binance.api.client.domain.general.Asset;
+import com.binance.api.client.domain.market.BookTicker;
 import com.binance.api.client.domain.market.TickerStatistics;
-import mainecoins.Repository.CustomUserRepository;
+import mainecoins.repository.CustomUserRepository;
 import mainecoins.model.CustomUser;
 import mainecoins.model.dto.SingInDTO;
 import mainecoins.security.JwtTokenProvider;
@@ -78,9 +79,15 @@ public class MyRestController {
     }
 
     @GetMapping("get-assets")
-    public ResponseEntity<List<Asset>> get24HrPriceStatistics() {
+    public ResponseEntity<List<Asset>> getAssets() {
 
         return new ResponseEntity<>(customUserService.getAssets(), HttpStatus.OK);
+
+    }
+    @GetMapping("get-book-tickers")
+    public ResponseEntity<List<BookTicker>> getBookTickers() {
+
+        return new ResponseEntity<>(customUserService.getBookTickers(), HttpStatus.OK);
 
     }
 
