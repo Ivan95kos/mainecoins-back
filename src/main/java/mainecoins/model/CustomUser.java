@@ -20,6 +20,7 @@ public class CustomUser {
     @Min(value = 18, message = "Your age should be greater than or equal to 18")
     private int age;
 
+
     @Field("Password")
     @NotBlank(message = "Password can not be empty")
     private String password;
