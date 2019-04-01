@@ -3,6 +3,7 @@ package mainecoins.service;
 import com.binance.api.client.BinanceApiClientFactory;
 import com.binance.api.client.BinanceApiRestClient;
 import com.binance.api.client.domain.account.Account;
+import com.binance.api.client.domain.general.Asset;
 import com.binance.api.client.domain.market.TickerStatistics;
 import com.binance.api.client.exception.BinanceApiException;
 import lombok.extern.slf4j.Slf4j;
@@ -89,6 +90,10 @@ public class CustomUserService {
 
     public TickerStatistics get24HrPriceStatistics(String tickerStatistics) {
         return getClient().get24HrPriceStatistics(tickerStatistics);
+    }
+
+    public List<Asset> getAssets(){
+        return getClient().getAllAssets();
     }
 
     private BinanceApiRestClient getClient() {

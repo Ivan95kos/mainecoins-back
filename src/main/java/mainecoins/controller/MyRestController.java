@@ -1,6 +1,7 @@
 package mainecoins.controller;
 
 import com.binance.api.client.domain.account.Account;
+import com.binance.api.client.domain.general.Asset;
 import com.binance.api.client.domain.market.TickerStatistics;
 import mainecoins.Repository.CustomUserRepository;
 import mainecoins.model.CustomUser;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@RestController("/user")
+@RestController()
 public class MyRestController {
 
     private CustomUserService customUserService;
@@ -73,6 +74,13 @@ public class MyRestController {
     public ResponseEntity<TickerStatistics> get24HrPriceStatistics(@RequestParam("symbol") String tickerStatistics) {
 
         return new ResponseEntity<>(customUserService.get24HrPriceStatistics(tickerStatistics), HttpStatus.OK);
+
+    }
+
+    @GetMapping("get-assets")
+    public ResponseEntity<List<Asset>> get24HrPriceStatistics() {
+
+        return new ResponseEntity<>(customUserService.getAssets(), HttpStatus.OK);
 
     }
 
