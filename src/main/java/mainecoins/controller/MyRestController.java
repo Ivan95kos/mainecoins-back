@@ -19,7 +19,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@RestController()
+@RestController
+@CrossOrigin
 public class MyRestController {
 
     private CustomUserService customUserService;
@@ -57,34 +58,34 @@ public class MyRestController {
 
     }
 
-    @GetMapping("account-binance")
+    @GetMapping("/account-binance")
     public ResponseEntity<Account> getAccountStatusBinance() {
 
         return new ResponseEntity<>(customUserService.getStatusAccount(), HttpStatus.OK);
 
     }
 
-    @GetMapping("all-24hr-price-statistics-binance")
+    @GetMapping("/all-24hr-price-statistics-binance")
     public ResponseEntity<List<TickerStatistics>> getAll24HrPriceStatistics() {
 
         return new ResponseEntity<>(customUserService.getAll24HrPriceStatistics(), HttpStatus.OK);
 
     }
 
-    @GetMapping("24hr-price-statistics-binance")
+    @GetMapping("/24hr-price-statistics-binance")
     public ResponseEntity<TickerStatistics> get24HrPriceStatistics(@RequestParam("symbol") String tickerStatistics) {
 
         return new ResponseEntity<>(customUserService.get24HrPriceStatistics(tickerStatistics), HttpStatus.OK);
 
     }
 
-    @GetMapping("get-assets")
+    @GetMapping("/get-assets")
     public ResponseEntity<List<Asset>> getAssets() {
 
         return new ResponseEntity<>(customUserService.getAssets(), HttpStatus.OK);
 
     }
-    @GetMapping("get-book-tickers")
+    @GetMapping("/get-book-tickers")
     public ResponseEntity<List<BookTicker>> getBookTickers() {
 
         return new ResponseEntity<>(customUserService.getBookTickers(), HttpStatus.OK);

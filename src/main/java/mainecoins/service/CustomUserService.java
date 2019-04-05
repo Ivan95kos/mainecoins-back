@@ -58,7 +58,6 @@ public class CustomUserService {
         }
     }
 
-
     public CustomUser signIn(SingInDTO singInDTO) {
 
         authenticationManager.authenticate(
@@ -112,6 +111,4 @@ public class CustomUserService {
             throw new CustomException(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
-
-
 }
