@@ -20,12 +20,12 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@CrossOrigin(
-        origins = "*",
-        allowCredentials = "true",
-        methods = {RequestMethod.GET, RequestMethod.OPTIONS, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT, RequestMethod.PATCH},
-        allowedHeaders = {"X-Requested-With", "Origin", "Content-Type", "Accept", "Authorization"}
-)
+//@CrossOrigin(
+//        origins = "*",
+//        allowCredentials = "true",
+//        methods = {RequestMethod.GET, RequestMethod.OPTIONS, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT, RequestMethod.PATCH},
+//        allowedHeaders = {"X-Requested-With", "Origin", "Content-Type", "Accept", "Authorization"}
+//)
 public class MyRestController {
 
     private CustomUserService customUserService;
