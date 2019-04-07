@@ -51,6 +51,7 @@ public class CustomUserService {
             customUser.setPassword(passwordEncoder.encode(customUser.getPassword()));
 
             CustomUser saveUser = customUserRepository.save(customUser);
+
             return saveUser;
         } else {
             log.error("Email is already in use");

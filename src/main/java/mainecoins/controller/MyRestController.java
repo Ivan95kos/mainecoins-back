@@ -20,6 +20,11 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+@CrossOrigin(
+        origins = "*",
+        allowCredentials = "true",
+        allowedHeaders = {"X-Requested-With", "Origin", "Content-Type", "Accept", "Authorization"}
+)
 public class MyRestController {
 
     private CustomUserService customUserService;
