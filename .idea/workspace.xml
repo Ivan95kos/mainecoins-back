@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e550f5e8-59cb-476e-af61-b9f5328fa6d0" name="Default Changelist" comment="">
+    <list default="true" id="e550f5e8-59cb-476e-af61-b9f5328fa6d0" name="Default Changelist" comment="add simpleCORS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+            <state relative-caret-position="415">
+              <caret line="51" column="81" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
               <folding>
                 <element signature="e#1700#1919#0" expanded="true" />
                 <element signature="e#1918#1919#0" expanded="true" />
@@ -58,23 +57,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/util/SimpleCORSFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/service/UserDetailsServiceImpl.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="30">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -132,9 +128,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/service/CustomUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mainecoins/util/SimpleCORSFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mainecoins/util/SimpleCORSFilter.java" />
       </list>
     </option>
   </component>
@@ -297,7 +293,7 @@
       <workItem from="1554132334528" duration="3492000" />
       <workItem from="1554202661733" duration="852000" />
       <workItem from="1554488291097" duration="1799000" />
-      <workItem from="1554633688907" duration="868000" />
+      <workItem from="1554633688907" duration="1255000" />
     </task>
     <task id="LOCAL-00001" summary="add simpleCORS">
       <created>1554492937062</created>
@@ -317,7 +313,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8136000" />
+    <option name="totallyTimeSpent" value="8523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -458,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        <state relative-caret-position="415">
+          <caret line="51" column="81" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
           <folding>
             <element signature="e#1700#1919#0" expanded="true" />
             <element signature="e#1918#1919#0" expanded="true" />
@@ -469,11 +465,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/util/SimpleCORSFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>

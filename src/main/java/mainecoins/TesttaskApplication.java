@@ -40,17 +40,17 @@ public class TesttaskApplication {
 
     }
 
-    @Bean
-    public WebMvcConfigurer corsConfig(){
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
-                        .allowedOrigins("*")
-                        .allowCredentials(true)
-                        .allowedMethods("POST, GET, OPTIONS, DELETE")
-                        .allowedHeaders("Content-Type, Accept, X-Requested-With");
-            }
-        };
-    }
+//    @Bean
+//    public WebMvcConfigurer corsConfig(){
+//        return new WebMvcConfigurer() {
+//            @Override
+//            public void addCorsMappings(CorsRegistry registry) {
+//                registry.addMapping("/**")
+//                        .allowedOrigins("*")
+//                        .allowCredentials(true)
+//                        .allowedMethods("POST, GET, OPTIONS, DELETE")
+//                        .allowedHeaders("Content-Type, Accept, X-Requested-With");
+//            }
+//        };
+//    }
 }
