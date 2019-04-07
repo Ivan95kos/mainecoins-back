@@ -15,6 +15,6 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins("*")
                 .allowCredentials(true)
                 .allowedMethods("POST, GET, OPTIONS, DELETE")
-                .allowedHeaders("Content-Type, Accept, X-Requested-With");
+                .allowedHeaders("X-Requested-With", "Origin", "Content-Type", "Accept", "Authorization");
     }
 }
