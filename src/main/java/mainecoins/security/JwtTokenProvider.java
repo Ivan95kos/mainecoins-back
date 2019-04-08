@@ -31,9 +31,11 @@ public class JwtTokenProvider {
     @Autowired
     private UserDetailsServiceImpl userDetailsService;
 
+    private static String SEC;
+
     @PostConstruct
     protected void init() {
-        SECRET = Base64.getEncoder().encodeToString(SECRET.getBytes());
+        SEC = Base64.getEncoder().encodeToString(SECRET.getBytes());
     }
 
     public String createToken(CustomUser customUser) {
@@ -46,7 +48,7 @@ public class JwtTokenProvider {
                 .setClaims(claims)
                 .setIssuedAt(now)
                 .setExpiration(validity)
-                .signWith(SignatureAlgorithm.HS512, SECRET)
+                .signWith(SignatureAlgorithm.HS512, SEC)
                 .compact();
     }
 
@@ -57,11 +59,11 @@ public class JwtTokenProvider {
     }
 
     public String getUsername(String token) {
-        return Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token).getBody().getSubject();
+        return Jwts.parser().setSigningKey(SEC).parseClaimsJws(token).getBody().getSubject();
     }
 
     public Claims getBody(String token) {
-        return Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token).getBody();
+        return Jwts.parser().setSigningKey(SEC).parseClaimsJws(token).getBody();
     }
 
     public String resolveToken(HttpServletRequest request) {
@@ -74,7 +76,7 @@ public class JwtTokenProvider {
 
     public boolean validateToken(String token) {
         try {
-            Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token);
+            Jwts.parser().setSigningKey(SEC).parseClaimsJws(token);
             return true;
         } catch (JwtException | IllegalArgumentException e) {
             throw new CustomException("Expired or invalid JWT token", HttpStatus.INTERNAL_SERVER_ERROR);

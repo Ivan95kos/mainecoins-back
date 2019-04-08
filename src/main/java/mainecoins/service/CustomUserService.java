@@ -2,6 +2,7 @@ package mainecoins.service;
 
 import com.binance.api.client.BinanceApiClientFactory;
 import com.binance.api.client.BinanceApiRestClient;
+import com.binance.api.client.constant.BinanceApiConstants;
 import com.binance.api.client.domain.account.Account;
 import com.binance.api.client.domain.general.Asset;
 import com.binance.api.client.domain.market.BookTicker;
@@ -81,7 +82,7 @@ public class CustomUserService {
     }
 
     public Account getStatusAccount() {
-        Account account = getClient().getAccount();
+        Account account = getClient().getAccount(BinanceApiConstants.DEFAULT_RECEIVING_WINDOW, getClient().getServerTime());
         return account;
     }
 
