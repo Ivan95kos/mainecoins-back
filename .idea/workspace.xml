@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e550f5e8-59cb-476e-af61-b9f5328fa6d0" name="Default Changelist" comment="add simpleCORS" />
+    <list default="true" id="e550f5e8-59cb-476e-af61-b9f5328fa6d0" name="Default Changelist" comment="add simpleCORS">
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/service/CustomUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1174">
+            <state relative-caret-position="1275">
               <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -40,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="375">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -61,11 +63,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="56" column="43" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="43" />
+            <state relative-caret-position="256">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/exception/CustomException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -116,15 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/security/SecurityConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -147,7 +149,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/config/MyConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/util/SimpleCORSFilter.java" />
@@ -160,6 +161,7 @@
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/security/JwtTokenProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/service/CustomUserService.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java" />
       </list>
     </option>
@@ -362,7 +364,7 @@
       <workItem from="1554202661733" duration="852000" />
       <workItem from="1554488291097" duration="1799000" />
       <workItem from="1554633688907" duration="11772000" />
-      <workItem from="1554706509536" duration="12047000" />
+      <workItem from="1554706509536" duration="12412000" />
     </task>
     <task id="LOCAL-00001" summary="add simpleCORS">
       <created>1554492937062</created>
@@ -389,7 +391,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31087000" />
+    <option name="totallyTimeSpent" value="31452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -411,7 +413,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.22857143" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.22857143" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
@@ -667,9 +669,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/exception/CustomException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/service/CustomUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1174">
+        <state relative-caret-position="1275">
           <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -679,24 +702,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="56" column="43" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="43" />
+        <state relative-caret-position="256">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
