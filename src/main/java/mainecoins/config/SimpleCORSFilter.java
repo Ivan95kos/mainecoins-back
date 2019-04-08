@@ -1,4 +1,4 @@
-package mainecoins.util;
+package mainecoins.config;
 
 //@Component
 //public class SimpleCORSFilter implements Filter {

@@ -1,10 +1,11 @@
 package mainecoins.security;
 
-import mainecoins.config.CorsFilter;
+import mainecoins.config.CORSFilter2;
 import mainecoins.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -19,6 +20,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 @Configuration
@@ -56,7 +58,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         // Entry points
         http.authorizeRequests()
-                .antMatchers("/registration", "/login").permitAll()
+                .antMatchers("/registration", "/login","/").permitAll()
                 // Disallow everything else..
                 .anyRequest().authenticated();
 
@@ -66,7 +68,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // Apply JWT
         http.apply(new JwtTokenFilterConfigurer(jwtTokenProvider));
 
-        http.addFilterBefore(new CorsFilter(), ChannelProcessingFilter.class);
+//        http.addFilterBefore(new CorsFilter(), ChannelProcessingFilter.class);
     }
 
     @Override
@@ -86,5 +88,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //        source.registerCorsConfiguration("/**", configuration);
 //        return source;
 //    }
+
+    @Bean
+    public CORSFilter2 corsFilter() {
+        CorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration config = new CorsConfiguration();
+        config.addAllowedOrigin("http://localhost:4200");
+        config.addAllowedOrigin("*");
+        config.addAllowedMethod(HttpMethod.DELETE);
+        config.addAllowedMethod(HttpMethod.GET);
+        config.addAllowedMethod(HttpMethod.OPTIONS);
+        config.addAllowedMethod(HttpMethod.PUT);
+        config.addAllowedMethod(HttpMethod.POST);
+        config.setAllowCredentials(true);
+        config.setAllowedHeaders(Arrays.asList("authorization", "content-type", "x-auth-token", "Content-Type"));
+        ((UrlBasedCorsConfigurationSource) source).registerCorsConfiguration("/**", config);
+        return new CORSFilter2(source);
+    }
 
 }
