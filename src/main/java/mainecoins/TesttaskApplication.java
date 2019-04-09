@@ -40,14 +40,14 @@ public class TesttaskApplication {
 
     }
 
-    @Bean
-    public WebMvcConfigurer corsConfig(){
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
-                .allowedOrigins("*");
-            }
-        };
-    }
+//    @Bean
+//    public WebMvcConfigurer corsConfig(){
+//        return new WebMvcConfigurer() {
+//            @Override
+//            public void addCorsMappings(CorsRegistry registry) {
+//                registry.addMapping("/**")
+//                .allowedOrigins("*");
+//            }
+//        };
+//    }
 }

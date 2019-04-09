@@ -4,8 +4,6 @@
     <list default="true" id="e550f5e8-59cb-476e-af61-b9f5328fa6d0" name="Default Changelist" comment="add simpleCORS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainecoins/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainecoins/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,15 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
-              <folding>
-                <element signature="e#1700#1878#0" expanded="true" />
-                <element signature="e#1877#1878#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="405">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -68,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="329">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,10 +161,10 @@
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/security/JwtTokenProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/service/CustomUserService.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -293,15 +287,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mainecoins" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mainecoins" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mainecoins-back" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mainecoins" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,7 +357,7 @@
       <workItem from="1554202661733" duration="852000" />
       <workItem from="1554488291097" duration="1799000" />
       <workItem from="1554633688907" duration="11772000" />
-      <workItem from="1554706509536" duration="14872000" />
+      <workItem from="1554706509536" duration="15712000" />
     </task>
     <task id="LOCAL-00001" summary="add simpleCORS">
       <created>1554492937062</created>
@@ -399,7 +384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33912000" />
+    <option name="totallyTimeSpent" value="34752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -693,16 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/controller/MyRestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -722,11 +697,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/TesttaskApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        <state relative-caret-position="405">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mainecoins/security/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
           <folding>
-            <element signature="e#1700#1878#0" expanded="true" />
-            <element signature="e#1877#1878#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
