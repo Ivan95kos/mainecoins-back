@@ -90,6 +90,4 @@ public class MyRestController {
         return new ResponseEntity<>(customUserService.getBookTickers(), HttpStatus.OK);
 
     }
-
-
 }
